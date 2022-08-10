@@ -1,0 +1,11 @@
+function reverseString(str) {
+  var tempArray = [];
+  for(var i = 0; i< str.length; i++){
+    tempArray.unshift(str[i])
+  }
+    str = tempArray.toString().replace(/,/g, "")
+
+  return str;
+}
+
+reverseString("hello");
